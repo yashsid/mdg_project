@@ -1,238 +1,197 @@
-<HTML>
-    <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes, target-densitydpi=device-dpi">
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+    "width=device-width, initial-scale=1.0">
     <style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body{
-        width: 100%;
-        max-width: 1400px;
-        display: block;
-        margin: auto;
-        min-height: 100vh;
-        background: #191919;
-        font-family: sans-serif;
-    }
-    
-    .navbar{
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9;
-        background: #1a1a1a;
-    }
-    
-    .nav-group{
-        list-style: none;
-        display: flex;
-    }
-    
-    .na button{
-        color: #fff;
-        opacity: 0.5;
-        text-decoration: none;
-        text-transform: capitalize;
-        padding: 10px 30px;
-        margin: 0 20px;
-        line-height: 80px;
-        font-size: 20px;
-    }
-    
-    .na button:hover, .nav1 button{
-    color: #fff;
-        opacity: 1;
-    text-decoration: none;
-        text-transform: capitalize;
-        padding: 10px 30px;
-        margin: 0 20px;
-        line-height: 80px;
-        font-size: 20px;
-    }
-    .home-section{
-        width: 100%;
-        height: 100vh;
-        padding: 0 150px;
-        display: flex;
-        align-items: center;
-        position: relative;
-        top: 0;
-        opacity: 1;
-        transition: 1s;
-        position: fixed;
-    }
-    
-    .hero-heading{
-        color: #fff;
-        font-size: 120px;
-        text-transform: capitalize;
-        font-weight: 300;
-    }
-    
-    .home-img{
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100vh;
-        width: 50%;
-        object-fit: cover;
-        opacity: 0.2;
-    }
-    .about-section{
-        width: 100%;
-        min-height: 100vh;
-        padding: 150px 100px 0;
-        position: fixed;
-        top: 0;
-        opacity: 0;
-        transition: 1s;
-        display: grid;
-        grid-template-columns: 300px 1fr;
-    }
-    
-    .about{
-        color: #fff;
-        opacity: 0.6;
-        font-size: 20px;
-        line-height: 40px;
-        float: left;
-        position: relative;
-    
-    }
-    .button {
-      background-color: #1a1a1a; 
-      border: none;
-      text-color: green;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-    }
-    .about-img{
-    position: absolute;
-        top: 0;
-        right: 0;
-        height:100vh;
-        width: 50%;
-        float: right;
-        object-fit: cover;
-        opacity: 0.2;
-    }
-    .headin{
-    color: #fff;
-        font-size: 100px;
-        text-transform: capitalize;
-        font-weight: 300;
-    }
-    .about-hob{
-        color: #fff;
-        opacity: 0.6;
-        font-size: 20px;
-        line-height: 40px;
-    }
-    .head-hob{
-    color: #fff;
-        font-size: 100px;
-        text-transform: capitalize;
-        font-weight: 200;
-    }
-    .img-bob{
-    position: absolute;
-        top: 0;
-        right: 0;
-        height: 60vh;
-        width: 50%;
-        float: right;
-        object-fit: cover;
-        opacity: 0.2;
-    }
+        #count{
+            opacity: 1;
+        }
+        #round{
+            opacity:1;
+            
+        }
+        #answer{
+            opacity: 0;
+            font-size: xx-large;
+        }
+        #demo{
+            opacity: 0;
+            vertical-align: middle;
+        }
+        #submit{
+            opacity: 0;
+            vertical-align: middle;
+        }
+        #in{
+            opacity: 0;
+            vertical-align: middle;
+        }
+        input{
+            width: 2ch;
+            box-sizing: content-box;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #000;
+            font-size: xx-large;
+            text-align: center;
+            margin: 5px;
+        }
+        p{
+            color: rgb(255, 17, 0);
+        }
     </style>
-    </head>
-    <body>
     
-    <nav class="navbar">
-        <ul class="nav-group">
-    <li id="sec1" class="nav1"><button class="button"  id="home">Home</button></li>
-    <li id="sec2" class="na"><button class="button" id="About-me">About me</button></li>
-    <li id="sec3" class="na"><button class="button" id="Hobbies">Hobbies</button></li>
-        </ul>
-    </nav>
-    
-    <section class="home-section" id="section1">
-        <h1 class="hero-heading">hi, i am <br> yash</h1>
-        <img src="images/WhatsApp%20Image%202021-12-22%20at%2010.56.26%20AM.jpeg" class="home-img" alt="">
-    <br>
-    </section>
-    <div class="about-section" id="section2">
-                    <h1 class="headin">Who AM I?</h1> 
-                    <br>
-                    <p class="about" A>
-                        Hi my name is yash sidana a 17 year old First year student at IIT Roorkee Production and Industrial department.
-                        I like to try new things.Working on complex problems finding out there solutions and by the way I live in gurgaon,haryana
-                    </p>
-                    
-                    <img src="images/360_F_312003832_T2hmgMlJOnDYcDjKybmtyRL0k5taIetb.jpg" class="about-img" >
-    </div> 
-    <footer class="about-section" id="section2">
-                   <h1 class="head-hob">My hobbies include</h1>
-                    <br>
-                    <p class="about-hob" style="float:left">
-                        Playing and watching cricket 
-                    </p>
-                    <p class="about-hob" style="float:centre">
-                        Playing  football
-                    </p>
-                    <p class="about-hob" style="float:right">
-                        Playing badminton 
-                    </p>
-                      <br>
-                      <br>
-                   <img src="images/medium-playing-talking-watching-cricket-inspirational-quotes-original-imaftbuzhvwwugnh.jpeg" class="img-bob">
-                   <img src="images/download.jfif" height="200" width="300" style="object-fit: cover;
-        opacity: 0.2;">
-                   <img src="images/shutterstock_1592944909+-+Badminton+racket+and+shuttlecock+in+motion_1200px+JPEG.jpg" height="200" width="300" style="object-fit: cover;
-        opacity: 0.2;">
-    </footer>
+</head>
+  
+<body style="text-align: center; background-image: url('file:///C:/Users/sidan/Downloads/images.jpg'); background-repeat: no-repeat; background-attachment: fixed;
+background-size: cover; text-decoration: aqua; font-size: 50px;" id="body">
     <script>
-    let home = document.querySelector('section');
-    let about = document.querySelector('div');
-    let hobbie = document.querySelector('footer');
-                document.querySelector('#home').onclick = function() {
-                    about.style.opacity = '0';
-                    home.style.opacity = '1';
-                    hobbie.style.opacity = '0';
-                    document.getElementById("sec1").className = "nav1";
-                    document.getElementById("sec3").className = "na";
-                    document.getElementById("sec2").className = "na";
-                };
-                document.querySelector('#About-me').onclick = function() {
-                    home.style.opacity = '0';
-                    about.style.opacity = '1';
-                    hobbie.style.opacity = '0';
-                    document.getElementById("sec1").className = "na";
-                    document.getElementById("sec3").className = "na";
-                    document.getElementById("sec2").className = "nav1";
-                };
+        const api_url = 
+              "https://foodish-api.herokuapp.com/api/";
+          
+        // Defining async function
+        async function getapi(url) {
+            
+            // Storing response
+            const response = await fetch(url);
+            
+            // Storing data in form of JSON
+            var data = await response.json();
+            console.log(data);
+            soln(data);
+        } 
+        var l='';         
+          getapi(api_url);
+          
+          
+          // Function to define innerHTML for HTML table
+          var arr=new Array();
+                var inp=new Array();
+                var u=0;
+          function soln(data) {
+              let string = data.image;
+                const usingSplit = string.split('');
+                const usingSpread = [...string];
+                const usingArrayFrom = Array.from(string);
+                const usingObjectAssign = Object.assign([], string);
                 
-                document.querySelector('#Hobbies').onclick = function() {
-                    about.style.opacity = '0';
-                    home.style.opacity = '0';
-                    hobbie.style.opacity = '1';
-                    document.getElementById("sec1").className = "na";
-                    document.getElementById("sec3").className = "nav1";
-                    document.getElementById("sec2").className = "na";
-                };
-    
+                for(var i=0;usingObjectAssign[41+i]!='/';i++){
+        
+                    arr[i]=usingObjectAssign[41+i];
+                    l+=arr[i];
+                }
+                console.log(arr);
+              let tab = 
+                  `<img src="${data.image}" width=600 length=400 style="align:middle;margin:0px 50px"></img>`
+
+              document.getElementById("demo").innerHTML = tab;
+              for(var i=0;i<arr.length;i++){
+                  var n=0;
+                  var t;
+                  if(arr[i]=='a'||arr[i]=='e'||arr[i]=='i'||arr[i]=='o'||arr[i]=='u'||arr[i]=='-'){
+                        t=`${arr[i]}`
+                  }else{
+                    t=`<input type="text" maxlength="1" id="${arr[i]}">`
+                    n+=1;
+                    u+=1;
+                  }
+                  console.log(i);
+                  document.getElementById("answer").innerHTML += t;
+                  
+                }
+              
+                
+                
+            }
+            
+            function answerinp(){
+                document.getElementById("")
+                var flag=0;
+                var t=0;
+                for(var i=0;i<arr.length;i++){
+                    if(arr[i]=='a'||arr[i]=='e'||arr[i]=='i'||arr[i]=='o'||arr[i]=='u'||arr[i]=='-'){
+                        inp[i]=arr[i];
+                    }else{
+                        inp[i]=document.getElementById(arr[i]);
+                        console.log(arr[i]);
+                        t+=1;
+                        if((arr[i])!=inp[i].value){
+                            flag=1;
+                        }
+                    }
+                   
+                }
+                console.log("blanks: "+u)
+                let r=`<p>Oh NOO!! it was ${l}</p>`
+                let s=`<p>Yes it is ${l},</p>`
+                let y=`<p id="p">You helped in preventing SpongeBob and pattrick's feast form getting spoiled.</p>`
+                    document.getElementById("answer").style.opacity=0;
+                    document.getElementById("submit").style.opacity=0;
+                if(flag==0){
+                    document.getElementById("demo").innerHTML = s;
+                    document.getElementById("demo").innerHTML +=y;
+                }else{
+                    document.getElementById("in").innerHTML=r;
+                }
+                console.log(inp);
+                clearTimeout(interval);
+                if(flag==0){
+                    var score=1000*count/15*t;
+                    score=Math.round(score);
                     
+                }
+                else{
+                    var score=0;
+                    
+                }
+                document.getElementById("count").innerHTML = "Your score is: "+score;
+            }
+         
+            var interval;
+            var count = 20;
+            function timer(){
                 
-    </script> 
-    </body>
-    </html>
+                document.getElementById("body").style.backgroundImage = "url('file:///C:/Users/sidan/Downloads/images(1).png')";
+                
+                document.getElementById("demo").style.opacity = 1;
+                
+                document.getElementById("in").style.opacity = 1;
+                document.getElementById("round").style.opacity = 0;
+                interval = setInterval(function(){
+                document.getElementById('count').innerHTML="Time Remaining: "+ count;
+                count--;
+                if(count==15){
+                    document.getElementById("body").style.backgroundImage = "url('file:///C:/Users/sidan/Downloads/images(2).png')";
+                    document.getElementById("answer").style.opacity = 1;
+                    document.getElementById("submit").style.opacity = 1;
+
+                }
+                if (count === 0){
+                    clearInterval(interval);
+                    
+                    alert("You're out of time! Your score is : 0");
+                }
+                }, 1000);
+            }
+            
+         
+        
+            </script>
+        
+    <div id="round"><h1>SpongeBob in need</h1><h4>SpongeBob and pattrick were going to restaurant to enjoy their friendship,<br>but plankton overheard their discussion and had caused disperancies with the menu of the restaurant </h4>
+        <br><img src="file:///C:/Users/sidan/Downloads/download.jpg">
+        <h4>Now they are only able to see the image of the dish and some of the letters from the name of dish,<br>enter the missing alphabets and help them enjoy their feast</h4><h4>And the another problem is the image of dish switches after every 20 sec and pattrick takes 5 sec to decide to wether order it or not if yes then he asks what the dish is,So you have 15 sec for guessing the image using hints.</h4></div>        
+    <div id="count" onclick="timer()"><button>start</button></div>       
+    <div id="demo"></div>
+    <div id="answer"></div>
+    <div id="ins"></div>
+    <br><br>
+    <div id="submit"><button onclick="answerinp()">submit</button></div>
+    <div id="in"></div>
+    
+</body>
+  
+</html>

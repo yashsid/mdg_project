@@ -1,6 +1,6 @@
-# my_portfolio
-<img src="images/WhatsApp%20Image%202021-12-22%20at%2010.56.26%20AM.jpeg">
-<img src="images/360_F_312003832_T2hmgMlJOnDYcDjKybmtyRL0k5taIetb.jpg">
-<img src="images/medium-playing-talking-watching-cricket-inspirational-quotes-original-imaftbuzhvwwugnh.jpeg">
-<img src="images/download.jfif">
-<img src="images/shutterstock_1592944909+-+Badminton+racket+and+shuttlecock+in+motion_1200px+JPEG.jpg">
+# image_guessing_game
+<img src="file:///C:/Users/sidan/Downloads/images.jpg">
+
+<img src="file:///C:/Users/sidan/Downloads/images(1).png">
+<img src="file:///C:/Users/sidan/Downloads/images(2).png">
+<img src="file:///C:/Users/sidan/Downloads/download.jpg">
